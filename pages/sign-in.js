@@ -18,10 +18,11 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <form>
+            <h3>Enter password &darr;</h3>
+            <input type="password" placeholder="Password" />
+            <input type="submit" label="Send" />
+          </form>
         </div>
       </main>
 
@@ -164,6 +165,13 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
+        }
+
+        input {
+          font-size: 16px;
+          padding: 12px;
+          margin: 24px auto;
+          display: block;
         }
       `}</style>
 
